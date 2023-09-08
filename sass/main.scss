@@ -1,0 +1,171 @@
+// reset
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #6f7cb2;
+}
+
+// variables
+$accentColor: #505f98;
+$primaryColor: #091133;
+$btnPrimaryColor: #ffffff;
+
+$btnBgPrimaryColor: #111b47;
+$btnBgSecondaryColor: #ffffff;
+
+// base selectors
+.section {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.container {
+  padding: 0 10px;
+  max-width: 1130px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  color: $btnPrimaryColor;
+  background: $btnBgPrimaryColor;
+  border: 2px solid $btnBgPrimaryColor;
+
+  &:hover,
+  &:focus {
+    color: $primaryColor;
+    background: $btnBgSecondaryColor;
+    border-radius: 2px;
+  }
+}
+
+// header
+.header {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.header__menu {
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 60px;
+}
+
+.header__menu-item {
+}
+
+.header__menu-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $accentColor;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.46;
+  color: #37447e;
+}
+
+.header__btn {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 160px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+// intro
+.intro {
+}
+
+.intro__body {
+  padding-top: 300px;
+  padding-bottom: 390px;
+  max-width: 540px;
+}
+
+.intro__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.32;
+  letter-spacing: 1px;
+  color: $primaryColor;
+  padding-bottom: 20px;
+}
+
+.intro__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  color: $accentColor;
+  padding-bottom: 70px;
+}
+
+.intro__buttom {
+  display: flex;
+  gap: 30px;
+}
+
+.intro__buttom-link {
+  font-weight: 500;
+  line-height: 1.62;
+  width: 190px;
+  height: 35px;
+}
