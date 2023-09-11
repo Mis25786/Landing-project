@@ -275,10 +275,17 @@ $btnBgSecondaryColor: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .product__img {
+  @media (max-width: 768px) {
+  }
 }
+
 .product__img-one {
   padding-top: 123px;
   padding-bottom: 130px;
@@ -299,6 +306,12 @@ $btnBgSecondaryColor: #ffffff;
 
 .product__body {
   max-width: 445px;
+
+  @media (max-width: 1020px) {
+    padding-left: 5px;
+  }
+  @media (max-width: 768px) {
+  }
 }
 
 .product__title {
@@ -437,9 +450,11 @@ $btnBgSecondaryColor: #ffffff;
   display: inline-flex;
   gap: 30px;
 }
+
 .footer__socials-item {
   width: 16px;
   height: 16px;
 }
+
 .footer__social-link {
 }
